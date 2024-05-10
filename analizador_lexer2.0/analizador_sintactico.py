@@ -41,4 +41,6 @@ class analizador_sintactico:
             instru=self.declaracion_entero()
             return instruccion(instru)
         
-        elif self.listatokens[self.contador].tipo=="PR" 
+        elif self.listatokens[self.contador].tipo=="PR" and self.listatokens[self.contador].lexema=="String":
+            instru=self.declaracion_string()
+             
