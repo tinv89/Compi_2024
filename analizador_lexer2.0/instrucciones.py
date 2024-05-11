@@ -68,13 +68,13 @@ class println():
         valor=self.exp.get_Valor(entorno)
         salida+=str(valor)+"\n"
         
-    def ob_salida():
-        global salida
-        return salida
+def ob_salida():
+    global salida
+    return salida
     
-    def set_salida(txt):
-        global salida
-        salida=txt
+def set_salida(txt):
+    global salida
+    salida=txt
         
 class printsn():
     def __init__(self,exp):

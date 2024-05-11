@@ -108,7 +108,7 @@ class aplicacion:
         for i in range(len(self.scanner.lista_tokens)):
             if self.scanner.lista_tokens[i].tipo=="ID":
                   nombre=self.scanner.lista_tokens[i-1].lexema
-                  
+                  identificador=self.scanner.lista_tokens[i-1].lexema
                   #para no sobreescribir en el token
                   indice=i+2
                   asignacion=""
